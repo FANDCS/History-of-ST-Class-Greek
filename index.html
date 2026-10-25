@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Διαδραστικά Μαθήματα Ιστορίας Στ' Τάξης</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
+      color: #333;
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    hr {
+      border: none;
+      height: 3px;
+      width: 80px;
+      background: linear-gradient(90deg, #00b4db, #0083b0);
+      margin: 20px auto 40px auto;
+      border-radius: 5px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .app-button {
+      color: white;
+      padding: 25px 20px;
+      border-radius: 15px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.4;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      min-height: 120px;
+    }
+
+    /* Χρώματα φόντου για τα κουμπιά (χωρίς εικόνες) */
+    .app-button:nth-child(4n+1) { background: linear-gradient(135deg, #16a085, #1abc9c); }
+    .app-button:nth-child(4n+2) { background: linear-gradient(135deg, #2980b9, #3498db); }
+    .app-button:nth-child(4n+3) { background: linear-gradient(135deg, #8e44ad, #9b59b6); }
+    .app-button:nth-child(4n+4) { background: linear-gradient(135deg, #d35400, #e67e22); }
+
+    .app-button:hover {
+      transform: translateY(-5px) scale(1.03);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      .app-button {
+        font-size: 15px;
+        padding: 20px 15px;
+        min-height: 100px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+
+      .app-button {
+        font-size: 14px;
+        padding: 18px 12px;
+        min-height: 90px;
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+      background: linear-gradient(135deg, #2c3e50, #34495e);
+      color: white;
+      font-size: 14px;
+      border-radius: 10px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    footer h4 {
+      margin: 0 0 15px 0;
+      color: #00b4db;
+    }
+
+    footer p {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+
+    footer a {
+      color: #00b4db;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Διαδραστικά Μαθήματα Ιστορίας Στ' Τάξης Δημοτικού</h1>
+  <hr>
+
+  <div class="container">
+    <a href="Η ΕΥΡΩΠΗ ΣΤΑ ΝΕΩΤΕΡΑ ΧΡΟΝΙΑ - Storyline output/story.html" class="app-button"><span>Η Ευρώπη στα Νεότερα Χρόνια</span></a>
+    <a href="Η ΟΘΩΜΑΝΙΚΗ ΑΥΤΟΚΡΑΤΟΡΙΑ ΣΤΑ ΝΕΩΤΕΡΑ ΧΡΟΝΙΑ - Storyline output/story.html" class="app-button"><span>Η Οθωμανική Αυτοκρατορία στα Νεότερα Χρόνια</span></a>
+    <a href="ΒΕΝΕΤΟΙ, ΓΕΝΟΥΑΤΕΣ ΚΑΙ ΑΛΛΟΙ ΚΑΤΑΚΤΗΤΕΣ - Storyline output/story.html" class="app-button"><span>Βενετοί, Γενουάτες και άλλοι κατακτητές</span></a>
+    <a href="ΟΙ ΣΥΝΘΗΚΕΣ ΖΩΗΣ ΤΩΝ ΥΠΟΔΟΥΛΩΝ ΕΛΛΗΝΩΝ - Storyline output/story.html" class="app-button"><span>Οι συνθήκες ζωής των υπόδουλων Ελλήνων</span></a>
+    <a href="ΟΙΚΟΝΟΜΙΚΕΣ ΔΡΑΣΤΗΡΙΟΤΗΤΕΣ ΤΩΝ ΥΠΟΔΟΥΛΩΝ - Storyline output/story.html" class="app-button"><span>Οικονομικές δραστηριότητες των υπόδουλων</span></a>
+    <a href="ΣΧΟΛΕΙΑ ΚΑΙ ΔΑΣΚΑΛΟΙ ΤΟΥ ΓΕΝΟΥΣ - Storyline output/story.html" class="app-button"><span>Σχολεία και δάσκαλοι του Γένους</span></a>
+    <a href="ΚΛΕΦΤΕΣ & ΑΡΜΑΤΟΛΟΙ - ΤΑ ΚΑΣΤΡΑ ΤΗΣ ΛΕΥΤΕΡΙΑΣ - Storyline output/story.html" class="app-button"><span>Κλέφτες και Αρματολοί: Τα κάστρα της λευτεριάς</span></a>
+    <a href="ΕΝΟΠΛΗ ΟΡΜΗ ΓΙΑ ΛΕΥΤΕΡΙΑ - Storyline output/story.html" class="app-button"><span>Ένοπλη ορμή για λευτεριά</span></a>
+    <a href="ΤΟ ΟΡΑΜΑ ΤΟΥ ΡΗΓΑ ΦΕΡΑΙΟΥ - Storyline output/story.html" class="app-button"><span>Το όραμα του Ρήγα Φεραίου</span></a>
+    <a href="Η ΕΠΑΝΑΣΤΑΣΗ ΑΡΧΙΖΕΙ ΣΤΗ ΜΟΛΔΟΒΛΑΧΙΑ - Storyline output/story.html" class="app-button"><span>Η Επανάσταση αρχίζει στη Μολδοβλαχία</span></a>
+    <a href="Η ΕΠΑΝΑΣΤΑΣΗ ΕΞΑΠΛΩΝΕΤΑΙ ΚΑΙ ΕΠΙΤΥΓΧΑΝΕΙ - Storyline output/story.html" class="app-button"><span>Η Επανάσταση εξαπλώνεται και επιτυγχάνει</span></a>
+    <a href="Ο ΚΑΠΟΔΙΣΤΡΙΑΣ ΚΥΒΕΡΝΗΤΗΣ - Storyline output/story.html" class="app-button"><span>Ο Καποδίστριας κυβερνήτης</span></a>
+    <a href="ΣΤΑ ΧΡΟΝΙΑ ΤΟΥ ΟΘΩΝΑ - Storyline output/story.html" class="app-button"><span>Στα χρόνια του Όθωνα</span></a>
+    <a href="Η ΒΑΣΙΛΕΙΑ ΤΟΥ ΓΕΩΡΓΙΟΥ Α΄ - Storyline output/story.html" class="app-button"><span>Η βασιλεία του Γεωργίου Α΄</span></a>
+    <a href="ΕΝΤΑΣΗ ΣΤΑ ΒΑΛΚΑΝΙΑ  - Storyline output/story.html" class="app-button"><span>Ένταση στα Βαλκάνια</span></a>
+    <a href="Η ΕΠΟΧΗ ΤΟΥ ΧΑΡΙΛΑΟΥ ΤΡΙΚΟΥΠΗ - Storyline output/story.html" class="app-button"><span>Η εποχή του Χαρίλαου Τρικούπη</span></a>
+    <a href="ΜΑΚΕΔΟΝΙΚΟΣ ΑΓΩΝΑΣ - Storyline output/story.html" class="app-button"><span>Μακεδονικός Αγώνας</span></a>
+    <a href="ΒΑΛΚΑΝΙΚΟΙ ΠΟΛΕΜΟΙ - Storyline output/story.html" class="app-button"><span>Βαλκανικοί πόλεμοι</span></a>
+    <a href="1ος ΠΑΓΚΟΣΜΙΟΣ ΠΟΛΕΜΟΣ - Storyline output/story.html" class="app-button"><span>1ος Παγκόσμιος Πόλεμος</span></a>
+    <a href="Ο ΠΟΛΕΜΟΣ ΣΤΗ ΜΙΚΡΑ ΑΣΙΑ - Storyline output/story.html" class="app-button"><span>Ο πόλεμος στη Μικρά Ασία</span></a>
+    <a href="Η ΕΠΟΧΗ ΤΟΥ ΜΕΣΟΠΟΛΕΜΟΥ - Storyline output/story.html" class="app-button"><span>Η εποχή του Μεσοπολέμου</span></a>
+    <a href="2ος ΠΑΓΚΟΣΜΙΟΣ ΠΟΛΕΜΟΣ - Storyline output/story.html" class="app-button"><span>2ος Παγκόσμιος Πόλεμος</span></a>
+    <a href="Η ΕΛΛΑΔΑ ΣΤΟΝ 2ο ΠΑΓΚΟΣΜΙΟ ΠΟΛΕΜΟ - Storyline output/story.html" class="app-button"><span>Η Ελλάδα στον 2ο Παγκόσμιο Πόλεμο</span></a>
+    <a href="ΚΑΤΟΧΗ και ΕΘΝΙΚΗ ΑΝΤΙΣΤΑΣΗ - Storyline output/story.html" class="app-button"><span>Κατοχή και Εθνική Αντίσταση</span></a>
+    <a href="ΕΜΦΥΛΙΟΣ ΠΟΛΕΜΟΣ - Storyline output/story.html" class="app-button"><span>Εμφύλιος Πόλεμος</span></a>
+  </div>
+
+  <footer>
+    <h4>Τεχνικές Πληροφορίες</h4>
+    <p>Ο επίσημος html-based ιστότοπος "τρέχει" μέσω των <a href="https://fandcs.github.io/main/History_Video_and_Lessons.html"><b>GitHub Pages</b></a>, ο κεντρικός ιστότοπος είναι <a href="https://sites.google.com/view/videoistoriastajewndimotikou/">Βίντεο και Μαθήματα Ιστορίας</a>. Εδώ γίνεται το host μόνο των διαδραστικών εφαρμογών μέσω του GitHub οργανισμού <a href="https://github.com/FANDCS">FANDCS</a>.</p>
+    <p><i>Τελευταία επεξεργασία: 25/10/2026</i></p>
+  </footer>
+</body>
+</html>
