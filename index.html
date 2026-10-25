@@ -37,6 +37,7 @@
     }
 
     .app-button {
+      position: relative;
       color: white;
       padding: 25px 20px;
       border-radius: 15px;
@@ -48,20 +49,66 @@
       justify-content: center;
       align-items: center;
       text-decoration: none;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       transition: all 0.3s ease;
       box-shadow: 0 6px 20px rgba(0,0,0,0.15);
       min-height: 120px;
+      overflow: hidden;
     }
 
-    /* Χρώματα φόντου για τα κουμπιά (χωρίς εικόνες) */
-    .app-button:nth-child(4n+1) { background: linear-gradient(135deg, #16a085, #1abc9c); }
-    .app-button:nth-child(4n+2) { background: linear-gradient(135deg, #2980b9, #3498db); }
-    .app-button:nth-child(4n+3) { background: linear-gradient(135deg, #8e44ad, #9b59b6); }
-    .app-button:nth-child(4n+4) { background: linear-gradient(135deg, #d35400, #e67e22); }
+    /* Εικόνες φόντου για κάθε κουμπί (φάκελος webmedia) */
+    .app-button:nth-child(1)  { background-image: url('webmedia/1 Η ΕΥΡΩΠΗ ΣΤΑ ΝΕΩΤΕΡΑ ΧΡΟΝΙΑ.png'); }
+    .app-button:nth-child(2)  { background-image: url('webmedia/2 ΟΘΩΜΑΝΙΚΗ ΑΥΤΟΚΡΑΤΟΡΙΑ, Ο ΓΙΓΑΝΤΑΣ ΜΕ ΤΑ ΠΗΛΙΝΑ ΠΟΔΙΑ.png'); }
+    .app-button:nth-child(3)  { background-image: url('webmedia/3 ΒΕΝΕΤΟΙ, ΓΕΝΟΥΑΤΕΣ ΚΙ ΑΛΛΟΙ ΚΑΤΑΚΤΗΤΕΣ_νεο.png'); }
+    .app-button:nth-child(4)  { background-image: url('webmedia/4 ΟΙ ΣΥΝΘΗΚΕΣ ΖΩΗΣ ΤΩΝ ΥΠΟΔΟΥΛΩΝ_νεο.png'); }
+    .app-button:nth-child(5)  { background-image: url('webmedia/5 ΟΙΚΟΝΟΜΙΚΕΣ ΔΡΑΣΤΗΡΙΟΤΗΤΕΣ ΤΩΝ ΥΠΟΔΟΥΛΩΝ_νεο.png'); }
+    .app-button:nth-child(6)  { background-image: url('webmedia/7 ΣΧΟΛΕΙΑ ΚΑΙ ΔΑΣΚΑΛΟΙ ΤΟΥ ΓΕΝΟΥΣ_νεο.png'); }
+    .app-button:nth-child(7)  { background-image: url('webmedia/8 ΚΛΕΦΤΕΣ ΚΑΙ ΑΡΜΑΤΟΛΟΙ_ΚΑΣΤΡΑ ΤΗΣ ΛΕΥΤΕΡΙΑΣ.png'); }
+    .app-button:nth-child(8)  { background-image: url('webmedia/9 ΕΝΟΠΛΗ ΟΡΜΗ ΓΙΑ ΛΕΥΤΕΡΙΑ_νεο.png'); }
+    .app-button:nth-child(9)  { background-image: url('webmedia/10 ΤΟ ΟΡΑΜΑ ΤΟΥ ΡΗΓΑ ΦΕΡΑΙΟΥ.png'); }
+    .app-button:nth-child(10) { background-image: url('webmedia/12 Η ΕΠΑΝΑΣΤΑΣΗ ΑΡΧΙΖΕΙ ΣΤΗ ΜΟΛΔΟΒΛΑΧΙΑ.png'); }
+    .app-button:nth-child(11) { background-image: url('webmedia/13 Η ΕΠΑΝΑΣΤΑΣΗ ΕΞΑΠΛΩΝΕΤΑΙ ΚΑΙ ΣΗΜΕΙΩΝΕΙ ΕΠΙΤΥΧΙΕΣ_νεο.png'); }
+    .app-button:nth-child(12) { background-image: url('webmedia/23 Ο ΚΑΠΟΔΙΣΤΡΙΑΣ ΚΥΒΕΡΝΗΤΗΣ.png'); }
+    .app-button:nth-child(13) { background-image: url('webmedia/24 ΣΤΑ ΧΡΟΝΙΑ ΤΟΥ ΟΘΩΝΑ.png'); }
+    .app-button:nth-child(14) { background-image: url('webmedia/25 Η ΒΑΣΙΛΕΙΑ ΤΟΥ ΓΕΩΡΓΙΟΥ Α.png'); }
+    .app-button:nth-child(15) { background-image: url('webmedia/26 ΕΝΤΑΣΗ ΣΤΑ ΒΑΛΚΑΝΙΑ_ΣΥΝΘΗΚΗ ΤΟΥ ΑΓΙΟΥ ΣΤΕΦΑΝΟΥ.png'); }
+    .app-button:nth-child(16) { background-image: url('webmedia/27 Η ΕΠΟΧΗ ΤΟΥ ΧΑΡΙΛΑΟΥ ΤΡΙΚΟΥΠΗ_νεο.png'); }
+    .app-button:nth-child(17) { background-image: url('webmedia/28 ΜΑΚΕΔΟΝΙΚΟΣ ΑΓΩΝΑΣ_νεο.png'); }
+    .app-button:nth-child(18) { background-image: url('webmedia/29 ΒΑΛΚΑΝΙΚΟΙ ΠΟΛΕΜΟΙ_νεο.png'); }
+    .app-button:nth-child(19) { background-image: url('webmedia/30 1ος ΠΑΓΚΟΣΜΙΟΣ ΠΟΛΕΜΟΣ_νεο.png'); }
+    .app-button:nth-child(20) { background-image: url('webmedia/31 Ο ΠΟΛΕΜΟΣ ΣΤΗ ΜΙΚΡΑ ΑΣΙΑ_νεο.png'); }
+    .app-button:nth-child(21) { background-image: url('webmedia/32 ΜΕΣΟΠΟΛΕΜΟΣ_νεο.png'); }
+    .app-button:nth-child(22) { background-image: url('webmedia/33 2ος ΠΑΓΚΟΣΜΙΟΣ ΠΟΛΕΜΟΣ_νεο.png'); }
+    .app-button:nth-child(23) { background-image: url('webmedia/34 Η ΕΛΛΑΔΑ ΣΤΟΝ 2ο ΠΑΓΚΟΣΜΙΟ ΠΟΛΕΜΟ.png'); }
+    .app-button:nth-child(24) { background-image: url('webmedia/35 ΚΑΤΟΧΗ ΚΑΙ ΕΘΝΙΚΗ ΑΝΤΙΣΤΑΣΗ_νεο.png'); }
+    .app-button:nth-child(25) { background-image: url('webmedia/36 ΕΜΦΥΛΙΟΣ ΠΟΛΕΜΟΣ_νεο.png'); }
+
+    /* Σκούρο υμένιο πάνω από την εικόνα για να διαβάζεται το κείμενο */
+    .app-button::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+      transition: all 0.3s ease;
+    }
+
+    .app-button span {
+      position: relative;
+      z-index: 2;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+      padding: 10px;
+    }
 
     .app-button:hover {
       transform: translateY(-5px) scale(1.03);
       box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    }
+
+    .app-button:hover::before {
+      background: rgba(0, 0, 0, 0.25);
     }
 
     @media (max-width: 768px) {
